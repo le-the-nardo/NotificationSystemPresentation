@@ -1,0 +1,39 @@
+﻿@page "/"
+@using NotificationSystemPresentation.Components.DTOs
+@inject HttpClient httpClient
+
+<h3>Log Messages List</h3>
+
+@if (_stringList != null)
+{
+    <ul>
+        @foreach (var item in _stringList)
+        {
+            <li>@item</li>
+        }
+    </ul>
+}
+else
+{
+    <p>Loading...</p>
+}
+
+@code {
+    List<string>? _stringList;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var endpointUrl = "http://localhost:5263/api/Message";
+
+        try
+        {
+            _stringList = await httpClient.GetFromJsonAsync<List<string>>(endpointUrl);
+            
+        }
+        catch (Exception ex)
+        {
+            // Lida com erros, como por exemplo uma falha na conexão com o servidor
+            Console.WriteLine($"Erro ao obter dados: {ex.Message}");
+        }
+    }
+}

@@ -1,0 +1,38 @@
+﻿@page "/newMessage"
+@using NotificationSystemPresentation.Components.DTOs
+@using System.Xml
+@inject HttpClient httpClient
+
+<h3>Send message to category</h3>
+
+<div>
+    <label for="content">Content:</label>
+    <input id="content" @bind="_postModel.Content" />
+
+    <label for="category">Category:</label>
+    <select id="category" @bind="_postModel.Category">
+        <option value="Sports">Sports</option>
+        <option value="Finances">Finances</option>
+        <option value="Movies">Movies</option>
+    </select>
+
+    <button @onclick="CreatePost">Submit</button>
+</div>
+
+@code {
+    readonly PostModel _postModel = new PostModel();
+
+    private async Task CreatePost()
+    {
+        var endpointUrl = "http://localhost:5263/api/Message";
+
+        try
+        {
+            await httpClient.PostAsJsonAsync(endpointUrl, _postModel);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error post: {ex.Message}");
+        }
+    }
+}

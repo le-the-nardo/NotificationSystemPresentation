@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/leonardo.gomes/RiderProjects/NotificationSystemPresentation/NotificationSystemPresentation/obj/Debug/net8.0/scopedcss/projectbundle/NotificationSystemPresentation.bundle.scp.css",
+      "PackagePath": "staticwebassets/NotificationSystemPresentation.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/leonardo.gomes/RiderProjects/NotificationSystemPresentation/NotificationSystemPresentation/wwwroot/app.css",
+      "PackagePath": "staticwebassets/app.css"
+    },
+    {
+      "Id": "/Users/leonardo.gomes/RiderProjects/NotificationSystemPresentation/NotificationSystemPresentation/wwwroot/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/leonardo.gomes/RiderProjects/NotificationSystemPresentation/NotificationSystemPresentation/wwwroot/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/leonardo.gomes/RiderProjects/NotificationSystemPresentation/NotificationSystemPresentation/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.NotificationSystemPresentation.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.NotificationSystemPresentation.props",
+      "PackagePath": "build\\NotificationSystemPresentation.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.NotificationSystemPresentation.props",
+      "PackagePath": "buildMultiTargeting\\NotificationSystemPresentation.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.NotificationSystemPresentation.props",
+      "PackagePath": "buildTransitive\\NotificationSystemPresentation.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
